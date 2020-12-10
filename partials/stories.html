@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row" ng-init="list()">
+        <h1 class="text-center login-title m-b-20">Stories</h1>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6 pull-right m-b-20">
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Filter</label>
+                    <div class="col-md-9">
+                        <select class="form-control capitalize" ng-model="filters.typeFilter" name="type">
+                            <option value="">All</option>
+                            <option ng-repeat="type in types" value="{{type}}">{{type}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-6 col-xs-12">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th ng:class="selectedCls('id')" ng:click="changeSorting('id')">ID</th>
+                        <th>Summary</th>
+                        <th>Description</th>
+                        <th>Type</th>
+                        <th ng:class="selectedCls('complexity')" ng:click="changeSorting('complexity')">Complexity</th>
+                        <th>Estimated time for completion</th>
+                        <th>Cost</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="story in stories | orderBy:sort.column:sort.descending | filter: filters.typeFilter"
+                        ng-click="viewStory(story.id)" ng-class="statusCls(story.status)">
+                        <td>{{story.id}}</td>
+                        <td>{{story.summary}}</td>
+                        <td>{{story.description}}</td>
+                        <td class="capitalize">{{story.type}}</td>
+                        <td class="capitalize">{{story.complexity}}</td>
+                        <td>{{story.estimatedHrs}}</td>
+                        <td>{{story.cost}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

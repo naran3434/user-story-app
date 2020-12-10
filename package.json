@@ -1,0 +1,20 @@
+{
+  "name": "angualar-js-task",
+  "version": "1.0.0",
+  "description": "AngularJS User Story App",
+  "main": "index.html",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -c-1 -p 8081"
+  },
+  "repository": {
+    "type": "git",
+    "url": "n"
+  },
+  "author": "Naran",
+  "license": "ISC"
+}
