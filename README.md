@@ -12,16 +12,16 @@ The App contains information about what kind of task needs to be performed. The 
 ## Installation
 
 * Clone the Repo
-> git clone url
+`git clone url`
 
 * Install http-server globally to fun application
-> npm install -g angular-http-server
+`npm install -g angular-http-server`
 
 * Install node dependencies
-> npm install
+`npm install`
 
 * Start the server
-> npm start
+`npm start`
 
 `Note: Please make sure api server is running`
 
