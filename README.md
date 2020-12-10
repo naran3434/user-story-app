@@ -14,7 +14,7 @@ The App contains information about what kind of task needs to be performed. The 
 * Clone the Repo
 `git clone url`
 
-* Install http-server globally to fun application
+* Install http-server globally to run application
 `npm install -g angular-http-server`
 
 * Install node dependencies
