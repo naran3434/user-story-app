@@ -34,5 +34,5 @@ Great, now you should be able to see the app in `http://localhost:8081`
 # Assumptions 
 - All the logged user details will be handled in authorization via API for created by / review by
 - Admin can able to do only approve/reject
-- Admin will not have option to edit any existing fields from form
+- Admin will not have option to edit any existing fields in the form
   
